@@ -1,0 +1,125 @@
+
+
+
+Git Basic Workflow with GitHub
+A quick introduction to Git with an hands on example starting with GitHub, making local changes and back to GitHub again.
+Setup the Project Folder
+Command Listing
+pwd
+mkdir projects
+cd projects
+pwd
+Git Configuration
+Command Listing
+git version
+git config --global user.name "Abe Lincoln"
+git config --global user.email "mrabe@git.training"
+git config --global --list
+Copy the Repository (clone)
+Command Listing
+# paste in your GitHub HTTPS clone URL
+git clone https://github.com/prezlincoln/github-demo.git
+ls
+cd github-demo
+ls
+git status
+The First Commit
+Command Listing
+echo "Test Git Quick Start demo" >> start.txt
+ls
+cat start.txt
+git status
+git add start.txt
+git status
+git commit -m "Adding start text file"
+git status
+Publishing Changes to GitHub (push)
+Command Listing
+git push origin master
+
+_____________________________________________
+
+
+git hub is version control system  we use git hub to put our created files over the web siye git hub 
+
+step 1:  i have a file on my desktop called move which i want to put over github
+  so  in gitbash i go to
+
+$cd Desktop/move
+
+you initialize this by 
+$git init
+
+ so after this we will do $ls  to look for the files in our derectory                   cd add commit -m
+$ls -la will show you the .git hidden file
+
+now the next 2nd  big step is moving this files from working derectory to staging area 
+
+ $git add education.html
+$git status
+
+will show education.html in green while all others in red
+
+to put all in staging area
+$git add .
+
+
+now the 3 rd big step is commiting
+$commit -m "you put your message here like initial rivision "
+
+you can always check your status any time
+
+ang git log shows all info
+
+ working in stagin environment
+
+git checkout is like undo in working derectory
+git reset Head is undo like bringing back ile from staging area to working area
+git rm myscript - not only deletes but aalso brings in staging
+_____________________________________________________________________________________________________________________________
+all you need to know 
+cd mkdir pwd ls ls -la
+
+1.git clone url                                           to copy someone elses repository on remote server to our local machine
+
+2. git init
+git remote add origin url
+git add .
+git commit -m "the first version"                         to load out repository from local machine to remote repositoty
+  does both above(git commit -am "the first version)
+git push origin master
+
+git branching s very important part
+
+
+git checkout filename   undo in working derectory
+
+git reset Head  file name    undo from staging to working
+git rm ""                 not only deletes but also makes accepy in staging
+
+git init                initalizing
+git add file.html      staging
+git commit -m ""       commit the changes
+
+git status                to check where file lie
+git log                    to track commits 
+
+ 
+git push                 to push n remote repository
+git pull                 to get file from remote repository to  localcomputer
+
+git merge                when conflicyts occur  and you need to merge code of two people
+
+
+Branching one imp concept
+  git branch                    shw branches
+git branch alternate            creates branch alternate
+git checkout alternate           helps swithing branch
+git merege altername             combines twi branches
+
+git branch -m aplernate alter       changes name of branch
+git branch -d alternate             deletes branch named alternate
+
+______________________________________________________________________________________________________________________
+
+

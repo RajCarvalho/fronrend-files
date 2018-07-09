@@ -1,0 +1,421 @@
+Java script basic tutorial
+
+javascript runs on client side
+
+use
+html form validation
+event handling click hover popups
+dom geolocation etc it powers this features
+search and form autocomplete
+animation
+jquery ajax are libraries that do awesome stuff
+
+adding js
+<script></script>
+<script="text/javascript scr="myscript.js></script> -just like an image 
+
+1.variables
+var x;// empty variable
+
+x=4;// above declared variable x with a value of 4
+        
+var x=4;//   dclares a variable with value of 4
+
+2.arrays
+
+var cars=new Array();
+cars[0]="honda";
+cars[1]="toyota";
+cars[2]="ferrari";
+
+-----other way---
+
+var cars=new Array("Honda","toyota","ferrari");
+
+3.loops
+used to run the same code over and over until certain conditions are met
+
+ for loop- loops through number of times you usually know the number of times--no of times u know
+
+while loop- loops through while a condition is met you dont know the number of times-- u dont know no of times 
+
+for in loop- loops through any object value-fr arrays
+
+for(var i=0;i<5;i++)
+{
+document.write("number"+i+"</br>");
+}
+
+var i=0;
+while(i<5)
+{
+document.write("number"+1+"</br>");
+i++;
+}
+
+
+4.funtions
+
+create function
+
+function somefun()
+{
+document.write("this is a function");
+}
+
+call a function
+somefun();
+
+5.objects
+ everything in javascript is objects
+some built in objects are String Date,Array
+
+objects can be acessed like this
+objectName.propertyName
+
+example
+var greeting="hello";
+var x=greeting.lenght;
+x is equal to 5 as it is equal to lrngth property of the greeting variable
+
+
+video 2
+
+jquery
+
+still a clump of js called a library by far the most popular
+multi browser js library
+makes it easy to navigate a document and select a dom element
+handels eveny efficiency
+you can use jqueryto create plugins on top of js libray
+
+use
+effects and animation(slideshowa tabbs
+handel events clicks toggels hover
+feature detection
+manipulate the dom
+develop ajax application
+
+how to use
+
+1.download jquery from jquery.com or org and download actual  code
+<script type="text/javascript" src="jquery.js"></script> --because u saved the file as jquery.js
+
+jquery cdn
+include the link in your document
+ you see google librarie at developers.google.com/speed/libraries/
+
+
+document ready handler 
+
+ jquery should not run before the html so all jquery code goes here
+
+$(document).ready(function(){
+
+all jquery code goes here\
+});
+
+one of the reson why jquery is popular is this grabs and selects virtually anything in the dom
+
+ jquery selectors
+$("div") will select all div tags
+$("#myDiv")- will select with id of mydiv
+$("p.myClass")-will select the p with class of myClass
+
+jquery actions
+once we select we can do actions over them like
+
+$("div").addClass("myClass");
+will add a class to all <div>
+
+$("#myClass").css("color","red");
+will add css style to element
+
+var myElement=$(#myElement").html();
+we can get all of html inside an elemement with it as myElement using .html()
+
+jquery events
+$("a").click(function(){
+
+});
+
+some other events
+blur focus hover keydown load
+hide show  toggle
+
+animation
+$("#myElement").slideDown("fast",function(){ 3:21 PM 6/26/2018
+// do something here
+ 
+
+$("#myElement").slideUp("slow"'function(){ also numeric 1000 slideToggle
+
+
+
+javascript basics
+
+
+in crome`> inspect elements> console>you can write javascript code
+
+//  comment 
+alert is pop up
+prompt to input data
+document.write(""); console.log(""); to print on screen
+
+to link javascript file we use
+<script src="myscript.js"></script>
+script placement and where does it go in the body 
+
+
+operators
+> greater then
+< less then
+= assinment
+== comparison here 5=="5" problem (for value)
+=== the two equals may compare string and number as same (not only for value but also data type)
+&& and- both must be true
+|| or- one must be true
+| not
+
+
+
+variables and arrays
+ all flotes and non flots regarded as vars
+strings are defined in ""
+boolean  true false
+to clear console clear()
++-/* now 2**4 this is to the power of 4
+% to get the remeinder
+indexing starts at 0
+you know what is difference between undefined and null
+1.alert("");
+2.console.log("");
+3.prompt("");
+
+var name="Raj"
+var Lname="carvalho"
+document.write(name+Lname);
+
+.length- gives the length and white spaces count
+/n new line /t gives spaces \"quotes\" gives quotes to you
+
+var x=5;
+var y=10;
+document.write(x + y); this gives you 15
+ 
+var x="5";
+var y="10";
+document.write(x + y); this gives you 510 concatination
+
+document.write("i have "+x+" apples");
+
+Arrays
+arrays always start with zero
+
+var cars=new Array("honda","ford","toyota","Tata");
+document.write(cars[0]);
+
+var cars=["honda", "ford","toyota"]; will do same thing
+
+array properties
+.length
+.indexOf("toyota")
+
+
+Loops
+For loop 
+
+for(var a=1; a<10;a++)
+{
+document.write(a+"<br>");
+}
+_________________
+
+while loop
+
+var i=1;
+
+while(i<10)
+{
+document.write(i);
+}
+i++;
+
+___________________
+
+
+for in loop for arrays
+
+var people=["raj","boney","riche","darling"];
+for(i in people)
+{
+
+document.write(people[i]);
+}
+ or
+
+var people=["raj","simon","carvalho","1"]
+
+for(var i=0;i<people.length;i++)
+{
+document.write(people[i]);
+}
+_____________________________
+
+functions use camel case practice 
+
+basic
+function sayhello()
+{
+  document.write("hello");
+}
+
+sayhello();
+
+parametrized Function
+
+
+function add(num1,num2)
+{
+  sum=num1+num2;
+  return sum;
+}
+document.write(add(10,20));
+
+
+Conditional statement
+
+if statement
+if else
+if() else if() else if() else
+
+switch statement
+
+
+switch statement
+
+var a=4;
+switch(a)
+{
+  case 1:
+  document.write("case is 2");
+  break;
+
+
+  case 5:
+  document.write("case is 5");
+  break;
+  
+  default:
+  document.write("case is no any");
+  break;
+}
+
+
+for last letter in a word
+petName[petName.length-1];
+
+
+level 2 advanced
+function arrays and object(store data using key value pairs)
+
+functions
+no repeat ourselves and easily reuse code
+
+non parametrized
+
+parametrized
+
+parametrized with default values
+
+retun type methods for assinment
+
+scope global and local 
+
+arrays
+var countries=["usa","germany","china"];
+
+indexing
+countries[0]; wil give you usa
+
+re-assinment of strings
+countries[2]="france";
+now insted of china france will appear
+
+array is mutable strings are not meaning how we changed france to china a speeling cant.
+
+var mixed=[true,20,"raj"];
+
+methods
+mozila dev network js array
+methods
+
+var myarr=["one","two","three"];
+
+pop();- removes last element from array
+push(20) adds 20 to array
+
+the index of last element in the array
+
+myarray[myarray.length-1];
+
+var matrix=[[1,2,3],[4,5,6],[7.8.9]]
+
+array itteration
+______________________________
+
+for(var i=0;i<myarray.length;i++)
+{
+document.write(myarray[i]);
+}
+___________________________________
+
+for of loop
+
+for(i of myarray)
+{
+console.log(i);
+}
+__________________________________
+alert insted of document.write gives alert box of each array
+--------------------------------------------------------
+
+array.forEach(alert);
+
+insted in for each alert you can put in a method as well
+
+objects
+
+js objects are hash tabels they store info a key value pair
+when you define key dose not have any ""   -build
+but when you try to acess yout key should ave [""] call
+
+var carInfo={make:"toyota",year:"1990",model:"camry"}; u build a object carInfo
+
+carInfo["make"]; when you want to acess 
+toyota
+
+
+flexible interms og datapes it can have arrays and another objects inside it self'
+
+var example={a:"data",b:[1,2,3],c:{inside[a,b]}};
+
+now how to grab particular items from above
+grab data 2 and b
+example["a"];
+example["b"][1];
+example["c"]["inside"][1]
+
+console.dir(carInfo);
+
+itterating -in of 
+
+object methods
+this key word is used to refrence local variables
+
+var myObj={name:"Raj",greet:function(){
+console.log("hello"+this.name)}};
+
+this is used in js to acess local variables
+
+this.name.split("")[1] in this we split the name "john smith" based on "" and take 1 in array.

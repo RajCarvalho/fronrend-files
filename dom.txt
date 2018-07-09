@@ -1,0 +1,126 @@
+Dom and jquery Tutorial
+
+dom is document object modal  allows us to interact interface  our javascript code with html and css code
+
+in inspect element>console
+
+document-give you the entire document
+console.dir(document)- will give you object that consist of property and stuff 
+dom will allow us how to collaborate front end with javascript
+
+dom interaction
+
+grabbing firstly head body later classes ids etc
+document.URL
+document.body
+document.head
+document.link
+
+
+there are many methods for grabbing  elements from dom
+
+document.getElementById()
+document.getElementByClassName()
+document.getElementByTagName()
+document.querySelector() very first
+document.querySelectorAll()-all
+
+in last two we use tags in "" and ids and classes in .class_name and #id_name
+
+
+var myHeader=document.getElementById("header");
+myHeader.style.color="red";
+
+
+now this is calle grabbing inside data
+
+textContent imp to change text. p.textContent="i have changed para";
+innerHTML p.innerHTML="<strong>I am Bold</strong>;
+getAttribute- special.getAttribute("href");
+setAttribute-  special.setAttribute("href","https://www.amazon.com")
+
+
+events
+
+events
+hover
+double click
+drags
+
+
+mouseover
+mouseout
+
+
+ myvar.addEventListner(event,fun);
+
+
+ an example 
+var head=document.querySelector("h1");
+head.addEventListener("click",function()
+{
+head.textContent="heading changed";
+
+
+});
+
+there are a ton of events
+dom events on google
+click
+
+aiten.mcgoldrick@roberthalf.com
+
+jquery 
+
+this mainly simplifies the Dom
+code.jquery.com
+
+$ means document.querySelectorAll i.e to get the element
+ var x=$("h1");
+
+we use text() to get text and inser text
+
+we use html() to ge the code in html or edit using html
+
+x.css- changes the css value or property
+ li.eq(0) to grab first list item from a group
+-1 to get the last value
+
+.attr() to change attribute
+.val to change value
+
+.addClass
+.removeClass
+.toggleClass
+
+Jquery events
+
+$("h1").click(function(){
+});
+
+or 
+
+$("h1").on("click",function()
+{
+};
+
+does similar
+
+when you define a function and provide event as its parameter it gives away some property
+that property shows in console
+where which refers to alphabetical numbers
+
+animations are one important part
+
+api.jquery.com-category/events
+.fadeOut(3000);
+.slideUp(30000;
+
+
+
+
+
+
+
+
+
